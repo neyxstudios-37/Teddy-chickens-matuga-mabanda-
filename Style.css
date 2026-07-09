@@ -1,0 +1,23 @@
+/* Base Utilities */
+.content-auto {
+    content-visibility: auto;
+}
+
+/* Chicken Card Animations */
+.chicken-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.chicken-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Hover & Responsive Sizing */
+.overflow-hidden:hover img {
+    transform: scale(1.05);
+}
+@media (max-width: 640px) {
+    .h-56 {
+        height: 48vw; /* Adjusts to screen width on mobile */
+    }
+}
